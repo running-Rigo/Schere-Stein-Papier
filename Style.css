@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+    height: 100vh;
+}
+
+#game-field{
+    padding: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: peachpuff;
+    height: 70vh;
+    box-sizing: border-box;
+}
+
+#game-field button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 10px solid deeppink;
+    background-color: black;
+    color: white;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    margin-top: 20px;
+}
+
+header{
+    background-color: black;
+    padding: 3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    box-sizing: border-box;
+}
+
+.rules{
+    display: flex;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+
+h1 span{
+    padding: 4px 8px;
+}
+
+.scissor{
+    background-color: darkorange;
+}
+.stone{
+    background-color: darkorchid;
+}
+.paper{
+    background-color: green;
+}
+
+.user-input{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    background-color: white;
+}
+
+.result-container{
+    min-width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#computer-choice p, #player-choice p{
+    font-size: 100px;
+     margin: 3%;
+}
+
+.winner{
+    background-color: lightyellow;
+    border-radius: 10px;
+    border:10px solid deeppink;
+    padding: 10%;
+    background-image: url("img/round-winner.png");
+    background-size: cover;
+}
+
+#result-points{
+    padding: 3em;
+}
+
+.result-pic{
+    max-height: 50%;
+}
+
+.round-no{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    font-weight: bold;
+}
+
+
+
+
