@@ -6,38 +6,27 @@ body{
     height: 100vh;
 }
 
-#game-field{
-    padding: 3%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: peachpuff;
-    height: 70vh;
-    box-sizing: border-box;
-}
-
-#game-field button{
-    padding: 5px 10px;
-    border-radius: 10px;
-    border: 10px solid deeppink;
-    background-color: black;
-    color: white;
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-    margin-top: 20px;
-}
 
 header{
     background-color: black;
-    padding: 3%;
+    padding: 5% 0 0 0;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 30vh;
+    justify-content: space-between;
+    height: 40vh;
     box-sizing: border-box;
+}
+
+.centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p,li,h3{
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
 }
 
 .rules{
@@ -57,12 +46,47 @@ h1 span{
 .scissor{
     background-color: darkorange;
 }
+
 .stone{
     background-color: darkorchid;
 }
+
 .paper{
     background-color: green;
 }
+
+
+main{
+    padding: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: peachpuff;
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+.upper-part{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 10px solid deeppink;
+    background-color: black;
+    color: white;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+
 
 .user-input{
     padding: 5px 10px;
@@ -72,32 +96,32 @@ h1 span{
 }
 
 .result-container{
-    min-width: 50vw;
     display: flex;
-    justify-content: space-around;
+    width: 60vw;
+    justify-content: space-between;
     align-items: center;
 }
+.third-width{
+    text-align: center;
+    width: 20vw;
+}
 
-#computer-choice p, #player-choice p{
+.third-width p{
     font-size: 100px;
-     margin: 3%;
+    margin: 3%;
 }
 
 .winner{
     background-color: lightyellow;
     border-radius: 10px;
     border:10px solid deeppink;
-    padding: 10%;
+    padding: 2%;
     background-image: url("img/round-winner.png");
     background-size: cover;
 }
 
-#result-points{
-    padding: 3em;
-}
-
 .result-pic{
-    max-height: 50%;
+    max-height: 70%;
 }
 
 .round-no{
@@ -107,6 +131,16 @@ h1 span{
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     font-weight: bold;
 }
+
+#round-num-field{
+    width: 100%;
+}
+
+#result-points{
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+}
+
+
 
 
 

@@ -4,24 +4,51 @@
     <meta charset="UTF-8">
     <title>✂ | 🗿 | 🧻</title>
     <link rel="stylesheet" href="Style.css">
-
 </head>
 <body>
 <header>
-    <h1>Willkommen beim Spieleklassiker <span class="scissor">Schere ✂</span> - <span class="stone">Stein 🗿</span> - <span class="paper">Papier 🧻</span></h1>
-    <div class="rules">
-        <h3>Die Regeln:</h3>
-        <ul>
-            <li>Schere schneidet Papier</li>
-            <li>Papier umwickelt Stein</li>
-            <li>Stein stumpft die Schere ab</li>
-        </ul></div>
+    <div class="centered">
+        <h1>Willkommen beim Spieleklassiker <span class="scissor">Schere ✂</span> - <span class="stone">Stein 🗿</span> - <span class="paper">Papier 🧻</span></h1>
+        <div class="rules">
+            <h3>Die Regeln:</h3>
+            <ul>
+                <li>Schere schneidet Papier</li>
+                <li>Papier umwickelt Stein</li>
+                <li>Stein stumpft die Schere ab</li>
+            </ul>
+        </div>
+    </div>
+    <div id="round-num-field"></div>
 </header>
-<div id="round-num-field"></div>
-<div id="game-field">
-    <h1>Bist du bereit für die Challenge?</h1>
+
+<main id="game-field">
+    <!-- Usually visible, content changes via JS -->
+    <div class="upper-part">
+        <h1>Bist du bereit für die Challenge?</h1>
+    </div>
+
+    <!-- Buttons are shown/hidden over the time;-->
     <button id="start-btn">START GAME</button>
-</div>
+    <button id="submit-btn" type="submit">Bestätigen</button>
+    <button id="restart-btn">Nochmal spielen</button>
+
+    <!-- Hidden until results of one round are shown -->
+    <div class="result-container">
+        <div class="third-width" id="player-choice">
+            <h1>PLAYER:</h1>
+            <p></p>
+        </div>
+        <div class="third-width" id="result-points">
+            <p></p>
+        </div>
+        <div class="third-width" id="computer-choice">
+            <h1>COMPUTER:</h1>
+            <p></p>
+        </div>
+    </div>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="Index.js"></script>
 </body>
 </html>
